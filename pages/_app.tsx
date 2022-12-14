@@ -18,11 +18,11 @@ const quicksand = Quicksand({
   subsets: ["latin"]
 })
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <main className={quicksand.className}>
       <Head>
-        <title>eweed</title>
+        <title>Diego Dev</title>
       </Head>
       <Nav />
       <Component {...pageProps} />
