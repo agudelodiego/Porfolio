@@ -1,0 +1,31 @@
+.containerComment{
+  border-radius: 9px;
+  margin-top: 3.5rem;
+  color: var(--white);
+  width: 100%;
+}
+.header{
+  width: 100%;
+  background-color: var(--dark);
+  border-radius: 7px;
+  border-bottom: 1.7px solid var(--white);
+  padding: .7rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date{
+  font-size: 1rem;
+}
+.owner{
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--light-green);
+}
+.content{
+  background-color: var(--dark);
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 0 0 5px 5px;
+  overflow-x: auto;
+}

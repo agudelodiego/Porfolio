@@ -1,11 +1,24 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+:root{
+  --light-green: #05BE70;
+  --dark-green: #508d39;
+  --dark: #333;
+  --white: #fff;
+  --gray: #DBDBDB; 
+  --yelow: #FF0;
+}
+
 html,
 body {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
+  color:var(--dark);
+  background-color: var(--gray);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -14,13 +27,27 @@ a {
 * {
   box-sizing: border-box;
 }
+ul{
+  list-style: none;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+
+/* For resposive web desing we need to do some media queries, and of course i gonna using relatives size y my components */
+html{
+  font-size: 14px;
+}
+@media all and (min-width: 600px) and (max-width:800px){
+  html{
+    font-size: 16px;
   }
-  body {
-    color: white;
-    background: black;
+}
+@media all and (min-width: 800px) and (max-width:1600px){
+  html{
+    font-size: 17px
+  }
+}
+@media all and (min-width: 1600px){
+  html{
+    font-size: 18px
   }
 }

@@ -1,0 +1,31 @@
+.chatContainer{
+  height: auto;
+  margin-top: 0;
+  width: 100%;
+  padding: 3rem 1.5rem 7rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 800px){
+  .chatContainer{
+    padding: 3rem 15vw 7rem 15vw;
+  }
+}
+@media screen and (min-width: 1000px){
+  .chatContainer{
+    padding: 3rem 25vw 7rem 25vw;
+  }
+}
+.cgreen{
+  color: var(--light-green);
+}
+.chat{
+  width: 100%;
+  border-radius: 9px;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "project": {
+    "name": "portfolio"
+  },
+  "api": {
+    "projectId": "2zck5o27",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ],
+      "api": {
+        "dataset": "staging"
+      }
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}

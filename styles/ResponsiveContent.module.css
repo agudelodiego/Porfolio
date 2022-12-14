@@ -1,0 +1,27 @@
+.resposive{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+  padding: 5rem 3rem;
+}
+.Footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+  padding: 2rem 3rem;
+}
+@media screen and (max-width: 800px){
+  .resposive{
+    padding: 5rem .5rem;
+    flex-direction: column;
+  }
+  .Footer{
+    padding: 2rem .5rem
+  }
+}

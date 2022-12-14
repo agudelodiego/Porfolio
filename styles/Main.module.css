@@ -1,0 +1,15 @@
+.electronic{
+  width: 18rem;
+  height: auto;
+  padding: 0 2rem;
+}
+.text{
+  font-size: 1.3rem;
+  padding: 0;
+  width: 40vw;
+}
+@media screen and (max-width: 800px){
+  .text{
+    width: 90%;
+  }  
+}

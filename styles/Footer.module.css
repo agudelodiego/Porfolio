@@ -1,0 +1,14 @@
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 .5rem;
+}
+.link{
+  width: 4rem;
+  height: auto;
+  padding: .5rem;
+  margin: 0.5rem;
+  border-radius: 50%; 
+  background-image: linear-gradient(0deg, var(--light-green) , var(--white));
+}

@@ -1,0 +1,38 @@
+.container{
+  margin-top: 7rem;
+  width: 100%;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 800px) and (max-width:1000px){
+  .container{
+    padding: 3rem 15vw;
+  }
+}
+@media screen and (min-width: 1000px){
+  .container{
+    padding: 3rem 25vw;
+  }
+}
+.title{
+  color: var(--light-green);
+}
+.article{
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.icons{
+  width: 3rem;
+  height: 3rem;
+  margin-right: 20px;
+}
+.link{
+  color: var(--light-green);
+}
