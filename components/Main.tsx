@@ -21,7 +21,7 @@ const Main = () => {
             Esta aventura dio inicio en el año 2018, me encontraba cursando el segundo semestre de la carrera, y una nueva materia llegaba: Fundamentos de programación, misma que seria el punto de inflexión, el momento donde supe a que me queria dedicar el resto de mi vida. Conocí las bases de la programación en C++, apartir de esto comencé una ardua investigación sobre el desarrollo de software, misma que a dia de hoy no ha parado.
           </h2>
           <Image 
-            src='/Global.png'
+            src='/global.png'
             width={800}
             height={800}
             alt='Programing'

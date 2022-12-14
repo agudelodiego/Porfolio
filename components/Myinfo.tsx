@@ -32,7 +32,7 @@ const Myinfo = () => {
 
       <article className={Styles.article}>
         <Image 
-          src='/Platzi.png'
+          src='/Platzi.webp'
           width={200}
           height={200}
           className={Styles.icons}
