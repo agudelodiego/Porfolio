@@ -3,15 +3,11 @@ import Styles from '../styles/Card.module.css'
 import useLikes from '../hooks/useLike'
 
 
-// Images
-import Like from '../public/fblike.png'
-import Nolike from '../public/nonfblike.png'
-import github from '../public/githubLink.png'
-import see from '../public/vision.png'
-
 
 // Import our interfaces
 import {project} from '../interfaces'
+
+
 interface props{
   project:project
 }
@@ -43,7 +39,9 @@ const Card = ({project}:props) => {
 
           <a href={project.gh_link} rel="noreferrer" target="_blank">
             <Image 
-              src={github}
+              src='/githubLink.png'
+              width={200}
+              height={200}
               alt='Git hub repository'
               className={Styles.github}
             />
@@ -54,8 +52,10 @@ const Card = ({project}:props) => {
 
             <a href={project.deploy_link} rel="noreferrer" target="_blank">
             <Image 
-              src={see}
-              alt='Git hub repository'
+              src='/vision.png'
+              width={200}
+              height={200}
+              alt='See project deployed'
               className={Styles.github}
             />
             </a>
@@ -64,7 +64,9 @@ const Card = ({project}:props) => {
         </div>
         <span className={Styles.like} onClick={pushLike}>
           <Image 
-            src={like?Like:Nolike}
+            src={like?'/fblike.png':'/nonfblike.png'}
+            width={200}
+            height={200}
             alt='Like icon'
             className={like?Styles.like:Styles.Nonlike}
           />

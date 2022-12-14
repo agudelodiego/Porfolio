@@ -5,12 +5,6 @@ import Myinfo from './Myinfo'
 import Chat from './Chat'
 
 
-
-// Images
-import Like from '../public/fblike.png'
-import Nonlike from '../public/nonfblike.png'
-
-
 // Css modules
 import Styles from '../styles/Profile.module.css'
 import StyleHeader from '../styles/Header.module.css'
@@ -66,8 +60,10 @@ const Profile = ({user}:props) => {
         <span className={Styles.mg}>{likes}</span>
 
         <Image 
-          src={like?Like:Nonlike}
+          src={like?'/fblike.png':'/nonfblike.png'}
           alt='Dale like a mi perfil'
+          width={200}
+          height={200}
           className={like?Styles.like:Styles.nolike}
           onClick={pushLike}
         />

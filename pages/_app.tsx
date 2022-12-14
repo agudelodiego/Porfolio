@@ -32,3 +32,4 @@ const App = ({ Component, pageProps }: AppProps) => {
     </main>
   )
 }
+export default App
