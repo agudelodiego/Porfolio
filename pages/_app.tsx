@@ -22,7 +22,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <main className={quicksand.className}>
       <Head>
-        <title>Diego Dev</title>
+        <title>Hello world</title>
       </Head>
       <Nav />
       <Component {...pageProps} />

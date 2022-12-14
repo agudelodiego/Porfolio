@@ -2,8 +2,6 @@
 import Header from './Header'
 import Image from 'next/image'
 import Gallery from './Gallery'
-import Footer from './Footer'
-import ResponsiveContent from './ResponsiveContent'
 import Card from './Card'
 
 
@@ -11,10 +9,6 @@ import Card from './Card'
 import Text from '../styles/Header.module.css'
 import Photo from '../styles/Profile.module.css'
 import Styles from '../styles/Myinfo.module.css'
-
-
-// Images
-import Brand from '../public/Favicon.ico'
 
 
 // Import our interfaces
@@ -44,7 +38,9 @@ const Projects = ({projects}:props) => {
 
       <div className={Photo.containerPhoto}>
         <Image 
-          src={Brand}
+          src='/favicon.ico'
+          width={700}
+          height={700}
           alt='Page icon'
           className={Photo.profilePhoto}/>
       </div>
