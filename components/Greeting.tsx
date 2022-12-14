@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import js from '../public/js.png'
 import Styles from '../styles/Header.module.css'
 
 
@@ -8,7 +7,9 @@ const Greeting = () => {
   return (
     <>
       <Image 
-        src={js} 
+        src='/js.png'
+        width={800}
+        height={800} 
         alt='Header image'
         className={Styles.headerImg}
         priority={true}/>
