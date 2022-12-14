@@ -37,9 +37,13 @@ const Chat = ({comments,_id}:props) => {
 
       <h2 className={Styles.cgreen}>Hazme un comentario</h2>
 
-      <div className={Styles.chat}>
-        {feed.map((comment:comment)=>{return <Comment comment={comment} key={comment._id}/>})}
-      </div>
+      {
+        feed &&
+        <div className={Styles.chat}>
+          {feed.map((comment:comment)=>{return <Comment comment={comment} key={comment._id}/>})}
+        </div>
+      }
+      
 
       <NewComment _id={_id} pushComment={pushComment}/>
 
