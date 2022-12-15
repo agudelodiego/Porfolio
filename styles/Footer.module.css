@@ -10,5 +10,9 @@
   padding: .5rem;
   margin: 0.5rem;
   border-radius: 50%; 
-  background-image: linear-gradient(0deg, var(--light-green) , var(--white));
+  transition: background-color .4s;
+  /* background-image: linear-gradient(0deg, var(--light-green) , var(--white)); */
+}
+.link:hover{
+  background-color: var(--white);
 }

@@ -20,7 +20,7 @@ const Card = ({project}:props) => {
 
 
   return (
-    <article className={Styles.card}>
+    <a className={Styles.card} rel='noreferrer' target='_blank' href={project.deploy_link?project.deploy_link:project.gh_link}>
 
       <Image 
         src={project.project_image.asset.url}
@@ -37,7 +37,7 @@ const Card = ({project}:props) => {
 
         <div>
 
-          <a href={project.gh_link} rel="noreferrer" target="_blank">
+          <a href={project.gh_link} rel='noreferrer' target='_blank'>
             <Image 
               src='/githubLink.png'
               width={200}
@@ -50,7 +50,7 @@ const Card = ({project}:props) => {
           {
             project.deploy_link && 
 
-            <a href={project.deploy_link} rel="noreferrer" target="_blank">
+            <a href={project.deploy_link} rel='noreferrer' target='_blank'>
             <Image 
               src='/vision.png'
               width={200}
@@ -74,7 +74,7 @@ const Card = ({project}:props) => {
 
       </div>
 
-    </article>
+    </a>
   )
 }
 export default Card

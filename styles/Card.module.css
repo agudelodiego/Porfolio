@@ -5,6 +5,11 @@
   height: 18rem;
   border-radius: 12px;
   position: relative;
+  cursor: pointer;
+  transition: box-shadow .3s;
+}
+.card:hover{
+  box-shadow: -2px 2px 7px var(--dark-green);
 }
 @media screen and (max-width:600px) {
   .card{

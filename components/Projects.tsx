@@ -47,7 +47,7 @@ const Projects = ({projects}:props) => {
 
       <div className={Styles.container}>
         <h3>
-          Con el pasar del tiempo y con el fin de mejorar mis habilidades y expandir mis conocimientos en distiintos frameworks y librerias, he desarrollado varios proyectos, algunos de los cuales pueden ser vistos a continuación. Puedes revisar a profunfidad el codigo fuente al ir a mis repositorios de github o pudes ver el producto final llendo al dominio donde se hizo el deploy(disponible solo para algunos proyectos).
+          A medida que he ido adquiriendo más experiencia en la programación, he desarrollado una serie de proyectos que me han permitido mejorar mis habilidades y ampliar mis conocimientos en diferentes frameworks y bibliotecas. Algunos de estos proyectos se pueden ver a continuación. Si deseas profundizar en el código fuente, puedes visitar mis repositorios de GitHub, donde podrás encontrar todos los detalles del desarrollo de cada proyecto. Para ver el resultado final de algunos de estos proyectos, puedes visitar el dominio donde se hizo el despliegue (disponible solo para algunos proyectos).
         </h3>
       </div>
 
