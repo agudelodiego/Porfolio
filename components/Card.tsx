@@ -20,7 +20,7 @@ const Card = ({project}:props) => {
 
 
   return (
-    <a className={Styles.card} rel='noreferrer' target='_blank' href={project.deploy_link?project.deploy_link:project.gh_link}>
+    <article>
 
       <Image 
         src={project.project_image.asset.url}
@@ -74,7 +74,7 @@ const Card = ({project}:props) => {
 
       </div>
 
-    </a>
+    </article>
   )
 }
 export default Card
