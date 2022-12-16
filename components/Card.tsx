@@ -20,7 +20,7 @@ const Card = ({project}:props) => {
 
 
   return (
-    <a className={Styles.card}>
+    <article className={Styles.card}>
 
       <Image 
         src={project.project_image.asset.url}
@@ -43,7 +43,7 @@ const Card = ({project}:props) => {
               width={200}
               height={200}
               alt='Git hub repository'
-              className={Styles.github}
+              className={Styles.link}
             />
           </a>
 
@@ -56,7 +56,7 @@ const Card = ({project}:props) => {
               width={200}
               height={200}
               alt='See project deployed'
-              className={Styles.github}
+              className={Styles.link}
             />
             </a>
           }
@@ -74,7 +74,7 @@ const Card = ({project}:props) => {
 
       </div>
 
-    </a>
+    </article>
   )
 }
 export default Card
