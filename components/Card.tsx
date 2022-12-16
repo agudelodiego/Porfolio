@@ -20,7 +20,7 @@ const Card = ({project}:props) => {
 
 
   return (
-    <article>
+    <a className={Styles.card}>
 
       <Image 
         src={project.project_image.asset.url}
@@ -74,7 +74,7 @@ const Card = ({project}:props) => {
 
       </div>
 
-    </article>
+    </a>
   )
 }
 export default Card
